@@ -6,7 +6,7 @@ app.use(require("cors")());
 app.use(express.json());
 
 require("./db/config/db.config");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 const traineeRouter = require("./routes/trainee");
 const trainerRouter=require("./routes/trainer");

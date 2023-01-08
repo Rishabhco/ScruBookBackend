@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/6b610bb6-dd03-48fa-9d1f-8d104f95bb30/AppServices/subscriptions/6b610bb6-dd03-48fa-9d1f-8d104f95bb30/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/scruBookBackend",
+    "appService.deploySubpath": "."
+}

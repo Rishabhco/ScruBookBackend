@@ -41,7 +41,7 @@ const findAllSpecificTrainee=async(req,res)=>{
         where:{traineeUid:req.body.uid}
     }).then(data=>{
         if(data.length==0){
-            return res.status(202).send({message:"No Patients Exist"})
+            return res.status(202).send({message:"No Patients Exist",data})
         }
         res.status(200).send({message:"Patients Fetched Successfully",data})
     }).catch(error=>{
