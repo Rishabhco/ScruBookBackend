@@ -28,7 +28,7 @@ const findOne=async(req,res)=>{
         where:{uid:req.body.uid}
     }).then(data=>{
         if(!data){
-            return res.status(200).send({message:"No Patient Exists"})
+            return res.status(200).send({message:"No Patient Exists",data})
         }
         res.status(200).send({message:"Patient Fetched Successfully",data})
     }).catch(error=>{
@@ -55,7 +55,7 @@ const findAllSpecificTrainer=async(req,res)=>{
         where:{trainerUid:req.body.uid}
     }).then(data=>{
         if(data.length==0){
-            return res.status(200).send({message:"No Patients Exist"})
+            return res.status(200).send({message:"No Patients Exist",data})
         }
         res.status(200).send({message:"Patients Fetched Successfully",data})
     }).catch(error=>{
